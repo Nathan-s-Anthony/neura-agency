@@ -10,6 +10,5 @@ export const brain = new AgencyBrain(
   agencyCapabilities,
   softwareProjectWorkflow,
 );
-const taskFactory = new TaskFactory();
 
 const orchestrator = new Orchestrator(brain);
