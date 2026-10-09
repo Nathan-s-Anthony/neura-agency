@@ -128,39 +128,9 @@ function App() {
 
   return (
     <>
-      <div className="bg-slate-200 m-4 p-6 rounded-xl">
-        <div className="border rounded-xl p-6">
-          <div className="flex items-center gap-2 flex-col">
-            <img src={Logo} width={100} />
-            <h1 className="">Neura Agency</h1>
-          </div>
-          <div className="grid grid-cols-2 mt-10">
-            <div className="w-full">
-              <div className="w-full p-6">
-                <h2 className="text-xl font-bold mb-2">Agents</h2>
-                <div className=" grid lg:grid-cols-3 gap-2">
-                  <div className="rounded-sm p-6 bg-blue-500 ">Tech Lead</div>
-                  <div className="rounded-sm p-6 bg-blue-500">
-                    Lead Developer
-                  </div>
-                  <div className="rounded-sm p-6 bg-blue-500">QA</div>
-                </div>
-              </div>
-            </div>
-            <div className="w-full">
-              <div className="w-full">
-                <div className="w-full p-6">
-                  <h2 className="text-xl font-bold mb-2">Tasks</h2>
-                  <div className=" grid lg:grid-cols-3 gap-2">
-                    <div className="rounded-sm p-6 bg-blue-500 ">test</div>
-                    <div className="rounded-sm p-6 bg-blue-500">test</div>
-                    <div className="rounded-sm p-6 bg-blue-500">test</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div className="relative  ">
+        <Aside />
+        <Dashboard />
       </div>
     </>
   );

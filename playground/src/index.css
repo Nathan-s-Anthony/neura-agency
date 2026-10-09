@@ -2,9 +2,20 @@
 @import "tailwindcss";
 :root{
    --base-font-size: 16px;
+  --background: #0c0c0d;
+  --background-secondary: #222225;
+  --foreground: #f2f2f0;
+  --secondary: #1e1e21;
+}
+@theme inline {
+    --color-background: var(--background);
+    --color-background-secondary:var(--background-secondary);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
 }
 body{
-  @apply bg-[#10171a] text-[#171717];
+  @apply bg-background-secondary;
   font-family: "Space Mono", monospace;
 
 }

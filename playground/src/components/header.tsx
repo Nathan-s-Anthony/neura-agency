@@ -1,7 +1,9 @@
 export default function Header() {
   return (
-    <div className="bg-red-500 justify-end flex shadow-sm">
-      <div>test</div>
+    <div className="justify-end flex shadow-sm">
+      <div className="w-full">
+        <div>test</div>
+      </div>
     </div>
   );
 }

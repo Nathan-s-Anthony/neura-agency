@@ -1,37 +1,46 @@
+import {
+  FolderKanban,
+  HatGlasses,
+  LayoutGridCircles,
+  PanelLeft,
+} from "lucide-react";
 import Logo from "../../../src/images/logo3.png";
-import User from "../../src/assets/vite.svg";
 export default function Aside() {
   return (
-    <aside className="fixed h-full lg:w-60 z-10">
-      <nav className="flex bg-slate-200 h-full flex-col shadow-lg border-r-4 border-slate-300 rounded-tr-lg rounded-br-lg justify-between">
-        <a className="flex cursor-pointer  items-center p-6 gap-2">
-          <img src={Logo} width={50} />
-          <div className="flex flex-col">
-            <span className="text-shadow-xs text-slate-950 text-sm">Neura</span>
-            <span className="text-shadow-xs text-slate-950 text-xs">
-              Agency
-            </span>
-          </div>
-        </a>
-        {/* <ul className="p-2 flex flex-col gap-2 h-full">
-          <a className="bg-blue-200 cursor-pointer  hover:bg-blue-300 transition-all duration-300 shadow-sm rounded-xl p-2">
-            <li className="p-1">Tasks Pipeline</li>
-          </a>
-          <a className="bg-blue-200 cursor-pointer hover:bg-blue-300 transition-all duration-300  shadow-sm rounded-xl p-2">
-            <li className="p-1">Agents</li>
-          </a>
-        </ul> */}
-        <div className=" cursor-pointer  bg-blue-200 shadow-sm rounded-lg block p-2">
-          <div className="flex items-center gap-2">
-            <img
-              src={User}
-              width={50}
-              className="bg-slate-300 rounded-full p-2"
-            />
+    <aside className=" left-0 top-0 bottom-0 lg:w-50 overflow-y-hidden">
+      <nav className="flex relative h-full flex-col bg-background-secondary/30 rounded-tr-lg rounded-br-lg justify-center w-full">
+        <PanelLeft
+          className="absolute top-4 right-10 text-foreground/80 cursor-pointer"
+          size={20}
+        />
+        <div className=" relative mt-10 bottom-0   w-full top-0 h-full z-50">
+          <a className="flex  cursor-pointer  mb-5 logo items-center  px-2 py-4  gap-2">
+            <img src={Logo} width={30} className="object-contain " />
             <div className="flex flex-col">
-              <h4 className="text-slate-950">Nathan</h4>
-              <p className="text-slate-950">Test</p>
+              <span className="text-sm text-foreground/80 ">Neura Agency</span>
             </div>
+          </a>
+          <div className="h-full  relative">
+            <ul className="w-full">
+              <a className="text-foreground/80 px-2 py-4 flex items-center  text-sm gap-2 cursor-pointer group transition-all duration-300 hover:bg-blue-500 ">
+                <LayoutGridCircles className="group-hover:translate-x-1 transition-all duration-300 group-hover:text-blue-300" />
+                <li className=" group-hover:translate-x-1 transition-all duration-300 ">
+                  Dashboard
+                </li>
+              </a>
+              <a className="text-foreground/80  px-2 py-4 flex items-center  text-sm gap-2 cursor-pointer group transition-all duration-300 hover:bg-blue-500 ">
+                <FolderKanban className="group-hover:translate-x-1 transition-all duration-300" />
+                <li className="group-hover:translate-x-1 transition-all duration-300 ">
+                  Projects
+                </li>
+              </a>
+              <a className=" text-foreground/80 px-2 py-4 flex items-center  text-sm gap-2 cursor-pointer group transition-all duration-300 hover:bg-blue-500 ">
+                <HatGlasses className="group-hover:translate-x-1 transition-all duration-300" />
+                <li className="group-hover:translate-x-1 transition-all duration-300 ">
+                  Agents
+                </li>
+              </a>
+            </ul>
           </div>
         </div>
       </nav>

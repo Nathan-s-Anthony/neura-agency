@@ -2,27 +2,10 @@ import Header from "./header";
 
 export default function Dashboard() {
   return (
-    <div className="dashboard h-screen w-full block col-span-2 relative">
-      <div className=" test lg:ml-58 mr-auto h-full">
-        <div className="border 2 p-6 border-slate-150/50 bg-slate-200 h-full">
+    <div className="dashboard h-screen w-full absolute overflow-y-hidden left-0 top-4 right-0 bottom-0  ">
+      <div className="  lg:ml-50 mr-auto h-full">
+        <div className="border border-foreground/20 bg-background/80 shadow-lg rounded-tr-4xl rounded-tl-4xl rounded-bl-4xl h-full">
           <Header />
-          <div className="flex gap-2 flex-col">
-            <h1 className="font-bold text-2xl">Current Tasks Status</h1>
-            <div className=" flex w-full gap-4">
-              <div className="agents shadow-sm  p-6 bg-blue-200 rounded-xl ">
-                <h2>Tech Lead</h2>
-                <p>Status:</p>
-              </div>
-              <div className="agents  shadow-sm  p-6 bg-blue-200 rounded-xl ">
-                <h2>Tech Lead</h2>
-                <p>Status:</p>
-              </div>
-              <div className="agents  shadow-sm  p-6 bg-blue-200 rounded-xl ">
-                <h2>Tech Lead</h2>
-                <p>Status:</p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
