@@ -1,3 +1,7 @@
+import type { Agent } from "../../types/agent.ts";
+import type { Task } from "../../types/task.ts";
+import type { TaskResult } from "../../types/taskResults.ts";
+
 export class AgentExecutor {
   async execute(agent: Agent, task: Task): Promise<TaskResult> {
     console.log(`[AgentExecutor] ${agent.name} executing task: ${task.title}`);
