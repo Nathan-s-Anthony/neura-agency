@@ -19,6 +19,9 @@ body{
   font-family: "Space Mono", monospace;
 
 }
+a.active{
+  @apply bg-foreground/10 
+}
 
 html{
   font-size: var(--base-font-size);

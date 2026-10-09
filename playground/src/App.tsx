@@ -12,7 +12,6 @@ import Aside from "./components/aside.tsx";
 import Dashboard from "./components/dashboard.tsx";
 
 function App() {
-  const [count, setCount] = useState(0);
   const orchestrator = new Orchestrator(brain);
 
   const project = new Project("project-001", "Client Booking Platform");
@@ -126,14 +125,7 @@ function App() {
   console.log("Stage:", project.currentStage);
   console.log("Tasks:", project.tasks);
 
-  return (
-    <>
-      <div className="relative  ">
-        <Aside />
-        <Dashboard />
-      </div>
-    </>
-  );
+  return <></>;
 }
 
 export default App;
