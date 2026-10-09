@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import "tailwindcss";
+:root{
+   --base-font-size: 16px;
+}
+body{
+  @apply bg-[#10171a] text-[#171717];
+  font-family: "Space Mono", monospace;
+
+}
+
+html{
+  font-size: var(--base-font-size);
+}
